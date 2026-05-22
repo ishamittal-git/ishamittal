@@ -1,0 +1,2461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Isha Mittal | Journalist • Researcher • Writer</title>
+
+<meta
+name="description"
+content="Official portfolio of Isha Mittal — Journalist, Researcher, Editorial Professional, Writer and Academic Contributor."
+/>
+
+<link
+href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+rel="stylesheet"
+/>
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+
+<style>
+
+/* =========================
+ROOT
+========================= */
+
+:root{
+
+--bg:#070b11;
+--bg-soft:#0f1722;
+
+--card:#111927;
+--card-2:#172233;
+
+--primary:#f4f1ea;
+--gold:#d6a85f;
+
+--text-main:#e7edf5;
+--text-dim:#9ba9bb;
+
+--border:rgba(255,255,255,0.08);
+
+--shadow:0 10px 40px rgba(0,0,0,0.45);
+
+}
+
+/* =========================
+GLOBAL
+========================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+
+background:
+radial-gradient(circle at top right,
+rgba(214,168,95,0.08),
+transparent 25%),
+
+radial-gradient(circle at bottom left,
+rgba(80,120,255,0.06),
+transparent 25%),
+
+var(--bg);
+
+font-family:'Inter',sans-serif;
+color:var(--text-main);
+line-height:1.7;
+overflow-x:hidden;
+}
+
+::-webkit-scrollbar{
+width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+background:var(--gold);
+}
+
+/* =========================
+NAVBAR
+========================= */
+
+nav{
+
+position:fixed;
+width:100%;
+top:0;
+z-index:999;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:20px 8%;
+
+background:rgba(10,15,25,0.72);
+
+backdrop-filter:blur(18px);
+
+border-bottom:1px solid rgba(255,255,255,0.06);
+}
+
+.logo{
+font-family:'Playfair Display',serif;
+font-size:1.6rem;
+font-weight:700;
+color:#fff;
+letter-spacing:1px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:28px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:var(--text-dim);
+font-weight:500;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:var(--gold);
+}
+
+/* =========================
+HERO
+========================= */
+
+header{
+
+min-height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+
+text-align:center;
+
+padding:150px 20px 100px;
+
+background:
+
+linear-gradient(
+to bottom,
+rgba(0,0,0,0.45),
+rgba(0,0,0,0.75)
+),
+
+radial-gradient(circle at top,
+rgba(214,168,95,0.12),
+transparent 35%),
+
+#070b11;
+
+position:relative;
+}
+
+.hero-badge{
+
+display:inline-flex;
+align-items:center;
+gap:10px;
+
+padding:10px 18px;
+
+background:rgba(214,168,95,0.08);
+
+border:1px solid rgba(214,168,95,0.2);
+
+border-radius:40px;
+
+margin-bottom:30px;
+
+color:var(--gold);
+
+font-size:0.82rem;
+
+text-transform:uppercase;
+
+letter-spacing:1px;
+}
+
+.hero-badge span{
+width:8px;
+height:8px;
+border-radius:50%;
+background:var(--gold);
+animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.5);
+opacity:0.5;
+}
+
+100%{
+transform:scale(1);
+}
+}
+
+.profile-container{
+
+width:190px;
+height:190px;
+
+border-radius:50%;
+
+overflow:hidden;
+
+border:4px solid var(--gold);
+
+margin-bottom:35px;
+
+background:#0f1722;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+box-shadow:0 20px 45px rgba(0,0,0,0.35);
+
+transition:0.4s;
+}
+
+.profile-container:hover{
+transform:scale(1.05);
+}
+
+.profile-container img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.profile-container i{
+color:var(--gold);
+font-size:4rem;
+}
+
+header h1{
+
+font-family:'Playfair Display',serif;
+
+font-size:5rem;
+
+color:#fff;
+
+letter-spacing:1px;
+}
+
+.tagline{
+
+color:var(--gold);
+
+margin-top:12px;
+
+letter-spacing:4px;
+
+text-transform:uppercase;
+
+font-size:0.92rem;
+
+font-weight:600;
+}
+
+.hero-desc{
+
+max-width:850px;
+
+margin-top:28px;
+
+font-size:1.05rem;
+
+color:var(--text-dim);
+}
+
+.editorial-quote{
+
+max-width:780px;
+
+margin-top:40px;
+
+font-family:'Playfair Display',serif;
+
+font-size:1.35rem;
+
+line-height:1.8;
+
+color:#f3f5f8;
+
+font-style:italic;
+
+position:relative;
+}
+
+.editorial-quote::before{
+
+content:"“";
+
+position:absolute;
+
+left:-30px;
+top:-25px;
+
+font-size:6rem;
+
+color:rgba(214,168,95,0.15);
+}
+
+.hero-buttons{
+
+margin-top:45px;
+
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+
+gap:15px;
+}
+
+.btn{
+
+padding:14px 24px;
+
+border-radius:40px;
+
+border:1px solid rgba(214,168,95,0.35);
+
+text-decoration:none;
+
+color:#fff;
+
+font-weight:600;
+
+transition:0.35s;
+
+display:flex;
+align-items:center;
+gap:8px;
+
+background:rgba(255,255,255,0.03);
+
+backdrop-filter:blur(10px);
+}
+
+.btn:hover{
+
+background:var(--gold);
+
+color:#000;
+
+transform:translateY(-5px);
+
+box-shadow:
+0 10px 25px rgba(214,168,95,0.25);
+}
+
+/* =========================
+SECTIONS
+========================= */
+
+section{
+padding:110px 8%;
+}
+
+.section-title{
+
+font-family:'Playfair Display',serif;
+
+font-size:3rem;
+
+color:#fff;
+
+margin-bottom:60px;
+
+position:relative;
+
+display:inline-block;
+}
+
+.section-title::after{
+
+content:"";
+
+position:absolute;
+
+left:0;
+bottom:-10px;
+
+width:60%;
+
+height:2px;
+
+background:var(--gold);
+}
+
+/* =========================
+CARDS
+========================= */
+
+.glass-card{
+
+background:rgba(255,255,255,0.03);
+
+border:1px solid rgba(255,255,255,0.08);
+
+backdrop-filter:blur(16px);
+
+box-shadow:var(--shadow);
+
+transition:0.35s;
+}
+
+.glass-card:hover{
+
+transform:translateY(-10px);
+
+border-color:rgba(214,168,95,0.45);
+}
+
+/* =========================
+STATS
+========================= */
+
+.stats-section{
+margin-top:-60px;
+position:relative;
+z-index:2;
+padding:0 8%;
+}
+
+.stats-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+}
+
+.stat-card{
+
+padding:35px;
+
+border-radius:18px;
+
+text-align:center;
+}
+
+.stat-card h2{
+
+font-family:'Playfair Display',serif;
+
+font-size:2.7rem;
+
+color:var(--gold);
+}
+
+.stat-card p{
+color:var(--text-dim);
+margin-top:10px;
+}
+
+/* =========================
+ABOUT
+========================= */
+
+.about-grid{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:35px;
+}
+
+.about-box{
+
+padding:45px;
+
+border-radius:22px;
+}
+
+.about-box h3{
+
+font-size:1.5rem;
+
+color:#fff;
+
+margin-bottom:18px;
+
+display:flex;
+align-items:center;
+
+gap:12px;
+}
+
+.about-box h3 i{
+color:var(--gold);
+}
+
+.about-box p{
+color:var(--text-dim);
+}
+
+/* =========================
+STORY BLOCK
+========================= */
+
+.story-block{
+
+background:
+linear-gradient(
+135deg,
+rgba(214,168,95,0.12),
+rgba(20,30,45,0.95)
+);
+
+padding:70px;
+
+border-radius:24px;
+
+position:relative;
+
+overflow:hidden;
+
+border:1px solid rgba(255,255,255,0.08);
+
+backdrop-filter:blur(14px);
+
+box-shadow:var(--shadow);
+}
+
+.story-block h3{
+
+font-family:'Playfair Display',serif;
+
+color:var(--gold);
+
+font-size:2rem;
+
+margin-bottom:20px;
+}
+
+.story-block p{
+max-width:850px;
+color:#dde7f1;
+}
+
+/* =========================
+PUBLICATION GRID
+========================= */
+
+.pub-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(320px,1fr));
+
+gap:30px;
+}
+
+.pub-card{
+
+padding:35px;
+
+border-radius:22px;
+}
+
+.pub-meta{
+
+color:var(--gold);
+
+font-size:0.82rem;
+
+font-weight:600;
+
+letter-spacing:1px;
+
+text-transform:uppercase;
+
+margin-bottom:15px;
+}
+
+.pub-card h4{
+
+font-family:'Playfair Display',serif;
+
+font-size:1.45rem;
+
+color:#fff;
+
+margin-bottom:15px;
+}
+
+.pub-card p{
+color:var(--text-dim);
+}
+
+.pub-link{
+
+margin-top:20px;
+
+display:inline-flex;
+
+align-items:center;
+
+gap:8px;
+
+text-decoration:none;
+
+color:#fff;
+
+font-weight:600;
+
+transition:0.3s;
+}
+
+.pub-link:hover{
+color:var(--gold);
+}
+
+/* =========================
+EXPERIENCE GRID
+========================= */
+
+.experience-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(300px,1fr));
+
+gap:30px;
+}
+
+.exp-card{
+
+padding:35px;
+
+border-radius:22px;
+
+position:relative;
+
+overflow:hidden;
+}
+
+.exp-card::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+left:0;
+
+width:100%;
+height:4px;
+
+background:linear-gradient(
+90deg,
+var(--gold),
+transparent
+);
+}
+
+.exp-role{
+
+color:#fff;
+
+font-size:1.45rem;
+
+font-weight:700;
+
+margin-bottom:8px;
+}
+
+.exp-company{
+
+color:var(--gold);
+
+font-weight:600;
+
+margin-bottom:15px;
+}
+
+.exp-date{
+
+display:inline-block;
+
+padding:7px 14px;
+
+border-radius:30px;
+
+background:rgba(214,168,95,0.12);
+
+color:var(--gold);
+
+font-size:0.8rem;
+
+margin-bottom:18px;
+}
+
+.exp-desc{
+color:var(--text-dim);
+}
+
+/* =========================
+SKILLS
+========================= */
+
+.skills-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(240px,1fr));
+
+gap:25px;
+}
+
+.skill-card{
+
+padding:35px;
+
+text-align:center;
+
+border-radius:22px;
+}
+
+.skill-card i{
+
+font-size:2rem;
+
+color:var(--gold);
+
+margin-bottom:18px;
+}
+
+.skill-card h3{
+
+color:#fff;
+
+margin-bottom:12px;
+}
+
+.skill-card p{
+color:var(--text-dim);
+}
+
+/* =========================
+CONTACT
+========================= */
+
+.contact{
+background:#0b1119;
+}
+
+.contact-wrapper{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:50px;
+
+align-items:start;
+}
+
+.contact-side h3{
+
+font-family:'Playfair Display',serif;
+
+color:#fff;
+
+font-size:2rem;
+
+margin-bottom:20px;
+}
+
+.contact-side p{
+
+color:var(--text-dim);
+
+margin-bottom:35px;
+}
+
+.contact-points{
+
+display:flex;
+
+flex-direction:column;
+
+gap:20px;
+}
+
+.contact-point{
+
+display:flex;
+
+gap:18px;
+}
+
+.contact-point i{
+
+width:55px;
+height:55px;
+
+border-radius:14px;
+
+background:rgba(255,255,255,0.03);
+
+display:flex;
+
+justify-content:center;
+align-items:center;
+
+color:var(--gold);
+
+font-size:1.2rem;
+
+border:1px solid rgba(255,255,255,0.08);
+}
+
+.contact-point h4{
+color:#fff;
+}
+
+.contact-point span{
+color:var(--text-dim);
+font-size:0.92rem;
+}
+
+.contact-form{
+
+padding:45px;
+
+border-radius:22px;
+}
+
+.form-title{
+
+font-family:'Playfair Display',serif;
+
+font-size:1.8rem;
+
+color:#fff;
+
+margin-bottom:10px;
+}
+
+.form-subtitle{
+
+color:var(--text-dim);
+
+margin-bottom:30px;
+}
+
+.form-group{
+margin-bottom:22px;
+}
+
+.form-group label{
+
+display:block;
+
+margin-bottom:8px;
+
+font-weight:600;
+
+color:#fff;
+}
+
+.form-control{
+
+width:100%;
+
+padding:15px 18px;
+
+border-radius:12px;
+
+background:rgba(255,255,255,0.03);
+
+border:1px solid rgba(255,255,255,0.08);
+
+color:#fff;
+
+font-family:'Inter',sans-serif;
+
+transition:0.3s;
+}
+
+.form-control:focus{
+
+outline:none;
+
+border-color:var(--gold);
+
+box-shadow:0 0 0 4px rgba(214,168,95,0.08);
+}
+
+textarea{
+min-height:150px;
+resize:none;
+}
+
+.submit-btn{
+
+width:100%;
+
+padding:16px;
+
+border:none;
+
+border-radius:12px;
+
+background:var(--gold);
+
+color:#000;
+
+font-weight:700;
+
+cursor:pointer;
+
+transition:0.3s;
+}
+
+.submit-btn:hover{
+
+transform:translateY(-3px);
+
+box-shadow:0 10px 25px rgba(214,168,95,0.25);
+}
+
+/* =========================
+SOCIALS
+========================= */
+
+.social-icons{
+margin-top:40px;
+}
+
+.social-icons a{
+
+color:#fff;
+
+margin-right:20px;
+
+font-size:1.5rem;
+
+transition:0.3s;
+}
+
+.social-icons a:hover{
+color:var(--gold);
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer{
+
+background:#05080d;
+
+color:rgba(255,255,255,0.5);
+
+text-align:center;
+
+padding:35px;
+
+font-size:0.9rem;
+
+border-top:1px solid rgba(255,255,255,0.06);
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media(max-width:950px){
+
+.about-grid,
+.contact-wrapper{
+
+grid-template-columns:1fr;
+}
+
+nav{
+
+flex-direction:column;
+
+gap:18px;
+}
+
+nav ul{
+
+flex-wrap:wrap;
+
+justify-content:center;
+}
+}
+
+@media(max-width:600px){
+
+section{
+padding:80px 6%;
+}
+
+header h1{
+font-size:2.8rem;
+}
+
+.section-title{
+font-size:2rem;
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+width:100%;
+}
+
+.btn{
+justify-content:center;
+}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- =========================
+NAVBAR
+========================= -->
+
+<nav>
+
+<div class="logo">
+Isha Mittal
+</div>
+
+<ul>
+
+<li><a href="#about">About</a></li>
+<li><a href="#research">Research</a></li>
+<li><a href="#literature">Literature</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#presentations">Presentations</a></li>
+<li><a href="#experience">Journey</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<!-- =========================
+HERO
+========================= -->
+
+<header>
+
+<div class="hero-badge">
+<span></span>
+Building narratives across journalism, literature & research
+</div>
+
+<div class="profile-container">
+
+<img
+src="data:image/jpeg;base64,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"
+alt="Isha Mittal"
+onerror="this.style.display='none';"
+/>
+
+<i class="fas fa-feather-pointed"></i>
+
+</div>
+
+<h1>Isha Mittal</h1>
+
+<div class="tagline">
+Journalist • Editor • Researcher • Writer
+</div>
+
+<p class="hero-desc">
+
+Editorial professional and interdisciplinary researcher
+working across journalism, literary criticism,
+academic publishing, cinema studies,
+digital culture, and narrative theory.
+
+</p>
+
+<div class="editorial-quote">
+
+“I don’t just write stories —
+I investigate silences,
+decode cultures,
+and transform fragmented emotions
+into narratives people remember.”
+
+</div>
+
+<div class="hero-buttons">
+
+<a href="#research" class="btn">
+<i class="fas fa-book-open"></i>
+Research Archive
+</a>
+
+<a href="#literature" class="btn">
+<i class="fas fa-feather"></i>
+Literary Works
+</a>
+
+<a href="#contact" class="btn">
+<i class="fas fa-envelope"></i>
+Collaborate
+</a>
+
+</div>
+
+</header>
+
+<!-- =========================
+STATS
+========================= -->
+
+<section class="stats-section">
+
+<div class="stats-grid">
+
+<div class="stat-card glass-card">
+<h2>12+</h2>
+<p>Publications & Literary Works</p>
+</div>
+
+<div class="stat-card glass-card">
+<h2>5+</h2>
+<p>Research Papers & Book Chapters</p>
+</div>
+
+<div class="stat-card glass-card">
+<h2>4+</h2>
+<p>Conference Presentations</p>
+</div>
+
+<div class="stat-card glass-card">
+<h2>3+</h2>
+<p>Years of Editorial & Writing Experience</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+ABOUT
+========================= -->
+
+<section id="about">
+
+<h2 class="section-title">
+About Me
+</h2>
+
+<div class="about-grid">
+
+<div class="about-box glass-card">
+
+<h3>
+<i class="fas fa-newspaper"></i>
+Journalism & Editorial
+</h3>
+
+<p>
+
+Experienced in editorial writing,
+investigative journalism,
+digital publishing,
+proofreading,
+media production,
+and narrative development
+for academic and literary spaces.
+
+</p>
+
+</div>
+
+<div class="about-box glass-card">
+
+<h3>
+<i class="fas fa-brain"></i>
+Research & Academia
+</h3>
+
+<p>
+
+Researcher working across
+gender studies,
+cinema studies,
+literary criticism,
+psychology,
+digital culture,
+and interdisciplinary academic frameworks.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+STORY
+========================= -->
+
+<section>
+
+<div class="story-block">
+
+<h3>
+The Architecture Behind My Work
+</h3>
+
+<p>
+
+My work exists between newsroom urgency
+and literary reflection.
+
+Whether I’m investigating social structures,
+editing cultural narratives,
+or writing emotionally layered poetry,
+every project is driven by one belief:
+
+stories should not only inform people —
+they should stay with them.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- =========================
+RESEARCH
+========================= -->
+
+<!-- RESEARCH ARCHIVE -->
+
+<section id="research">
+
+  <h2 class="section-title">
+    Research Archive & Literary Contributions
+  </h2>
+
+  <div class="pub-grid">
+
+    <!-- ARTICLE -->
+
+    <div class="pub-card">
+
+      <div class="pub-meta">
+        Research Article • 2023
+      </div>
+
+      <h4>
+        Trends of Social Hierarchies and Women Empowerment Observed in Literature and Entertainment Industry
+      </h4>
+
+      <p>
+        Published in VEETHIKA - An International Interdisciplinary Research Journal.
+        Examines the intersections of hierarchy, gender representation,
+        and empowerment within literature and entertainment industries.
+      </p>
+
+      <a
+        href="#"
+        class="pub-link"
+      >
+        DOI Link
+        <i class="fas fa-arrow-right"></i>
+      </a>
+
+    </div>
+
+    <!-- ARTICLE -->
+
+    <div class="pub-card">
+
+      <div class="pub-meta">
+        Research Article • 2023
+      </div>
+
+      <h4>
+        Evolution of Entertainment and Indian Literature: From Musical Plays To Hollywood
+      </h4>
+
+      <p>
+        Published in Samyukta: A Journal of Gender and Culture.
+        Explores the transformation of entertainment narratives,
+        theatre traditions, and cinematic storytelling.
+      </p>
+
+      <a
+        href="#"
+        class="pub-link"
+      >
+        Journal Reference
+        <i class="fas fa-arrow-right"></i>
+      </a>
+
+    </div>
+
+    <!-- ARTICLE -->
+
+    <div class="pub-card">
+
+      <div class="pub-meta">
+        Creative Saplings • 2023
+      </div>
+
+      <h4>
+        Use of Women’s Beauty and Makeup in Battle:
+        Unveiling Stereotypes and Strength
+      </h4>
+
+      <p>
+        Analytical paper studying the symbolism of beauty,
+        cosmetics, femininity, and strength in historical
+        and fictional battle narratives.
+      </p>
+
+      <a
+        href="https://creativesaplings.in/"
+        target="_blank"
+        class="pub-link"
+      >
+        Explore Journal
+        <i class="fas fa-arrow-right"></i>
+      </a>
+
+    </div>
+
+    <!-- CHAPTER -->
+
+    <div class="pub-card">
+
+      <div class="pub-meta">
+        Book Chapter • 2024
+      </div>
+
+      <h4>
+        Exploring Patriarchy Through a Gendered Lens in the Comedy of Lysistrata
+      </h4>
+
+      <p>
+        Published in Gender Perspectives in Public Policy and Development.
+        Investigates feminist resistance and patriarchal structures
+        through classical Greek comedy.
+      </p>
+
+      <a
+        href="https://in.linkedin.com/in/isha-mittal-51a06927b"
+        target="_blank"
+        class="pub-link"
+      >
+        Publication Reference
+        <i class="fas fa-arrow-right"></i>
+      </a>
+
+    </div>
+
+    <!-- CHAPTER -->
+
+    <div class="pub-card">
+
+      <div class="pub-meta">
+        Edited Volume • 2023
+      </div>
+
+      <h4>
+        Navigating the Digital Divide:
+        The Dual Impact of Technology on Business Management and Financial Outcomes
+      </h4>
+
+      <p>
+        Research chapter examining technological inequality,
+        digital accessibility, business management,
+        and socio-economic outcomes in modern systems.
+      </p>
+
+      <a
+        href="#"
+        class="pub-link"
+      >
+        View Chapter
+        <i class="fas fa-arrow-right"></i>
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- NEWSPAPER & POETRY -->
+
+<section id="literature">
+
+  <h2 class="section-title">
+    Newspaper Features & Poetry
+  </h2>
+
+  <div class="experience-grid">
+
+    <div class="exp-card">
+
+      <div class="exp-role">
+        The Unfortunate Floods That Occurred Last Monsoon
+      </div>
+
+      <div class="exp-company">
+        Creative Saplings • 2024
+      </div>
+
+      <div class="exp-desc">
+        Poetry reflecting environmental destruction,
+        emotional displacement, and human vulnerability
+        caused by monsoon floods.
+      </div>
+
+      <br>
+
+      <a
+        href="https://creativesaplings.in/index.php/1/issue/view/40"
+        target="_blank"
+        class="pub-link"
+      >
+        Read Publication
+        <i class="fas fa-arrow-right"></i>
+      </a>
+
+    </div>
+
+    <div class="exp-card">
+
+      <div class="exp-role">
+        Greek Gods in The Odyssey
+      </div>
+
+      <div class="exp-company">
+        Creative Saplings • 2024
+      </div>
+
+      <div class="exp-desc">
+        Literary exploration of mythology,
+        divinity, and symbolic power structures
+        within Homeric storytelling.
+      </div>
+
+    </div>
+
+    <div class="exp-card">
+
+      <div class="exp-role">
+        Seeking Justice with Fairness:
+        A Case of Suicide in Azamgarh School
+      </div>
+
+      <div class="exp-company">
+        Samaj Weekly • 2023
+      </div>
+
+      <div class="exp-desc">
+        Newspaper article investigating social justice,
+        accountability, and institutional response
+        surrounding a student suicide case.
+      </div>
+
+    </div>
+
+    <div class="exp-card">
+
+      <div class="exp-role">
+        Everyday is a New Beginning
+      </div>
+
+      <div class="exp-company">
+        Times of India • 2022
+      </div>
+
+      <div class="exp-desc">
+        Inspirational reflective writing centered on resilience,
+        emotional growth, and personal transformation.
+      </div>
+
+    </div>
+
+    <div class="exp-card">
+
+      <div class="exp-role">
+        Happiness is in Me
+      </div>
+
+      <div class="exp-company">
+        Hindustan Times • 2022
+      </div>
+
+      <div class="exp-desc">
+        A reflective piece exploring internal happiness,
+        emotional consciousness, and self-awareness.
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- BOOKS -->
+
+<section id="books">
+
+  <h2 class="section-title">
+    Published Books
+  </h2>
+
+  <div class="pub-grid">
+
+    <!-- BOOK 1 -->
+
+    <div class="pub-card glass-card">
+
+      <div class="pub-meta">
+        Bluerose Publishers • 2023
+      </div>
+
+      <h4>
+        Emotions, Expressions and Experiences
+      </h4>
+
+      <p>
+        ISBN: 9789357416047
+        <br><br>
+
+        A literary anthology navigating emotional landscapes,
+        poetry, reflective prose,
+        and introspective storytelling.
+      </p>
+
+      <a
+        href="https://www.blueroseone.com/"
+        target="_blank"
+        class="pub-link"
+      >
+        Publisher Website
+        <i class="fas fa-arrow-right"></i>
+      </a>
+
+    </div>
+
+    <!-- BOOK 2 -->
+
+    <div class="pub-card glass-card">
+
+      <div class="pub-meta">
+        SPI Publications • October 2025
+      </div>
+
+      <h4>
+        Betiyaan
+      </h4>
+
+      <p>
+
+        A reflective literary work exploring
+        gender narratives,
+        emotional resilience,
+        identity,
+        and the social realities surrounding women.
+
+      </p>
+
+      <a
+        href="#"
+        class="pub-link"
+      >
+        Explore Publication
+        <i class="fas fa-arrow-right"></i>
+      </a>
+
+    </div>
+
+    <!-- BOOK 3 -->
+
+    <div class="pub-card glass-card">
+
+      <div class="pub-meta">
+        BriPublish • March 2025
+      </div>
+
+      <h4>
+        A Talk Between You And Them
+      </h4>
+
+      <p>
+
+        A contemplative literary collection
+        examining communication,
+        human connection,
+        emotional dialogue,
+        and silent introspection.
+
+      </p>
+
+      <a
+        href="#"
+        class="pub-link"
+      >
+        View Publication
+        <i class="fas fa-arrow-right"></i>
+      </a>
+
+    </div>
+
+    <!-- BOOK 4 -->
+
+    <div class="pub-card glass-card">
+
+      <div class="pub-meta">
+        Bookleaf Publications
+      </div>
+
+      <h4>
+        A Voice To Human Emotions:
+        Whispered Feelings & Silent Thoughts
+      </h4>
+
+      <p>
+
+        A poetic and emotionally layered collection
+        centered on inner emotions,
+        vulnerability,
+        silence,
+        healing,
+        and reflective human experiences.
+
+      </p>
+
+      <a
+        href="#"
+        class="pub-link"
+      >
+        Read More
+        <i class="fas fa-arrow-right"></i>
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PRESENTATIONS -->
+
+<section id="presentations">
+
+  <h2 class="section-title">
+    Conferences & Paper Presentations
+  </h2>
+
+  <div class="experience-grid">
+
+    <div class="exp-card">
+
+      <div class="exp-role">
+        Designing an E-Tech App:
+        Promoting E-Waste Management Techniques
+      </div>
+
+      <div class="exp-company">
+        Orrey’24 • Miranda House • University of Delhi
+      </div>
+
+      <div class="exp-date">
+        2024
+      </div>
+
+      <div class="exp-desc">
+        Presentation focused on sustainability,
+        digital waste awareness,
+        and technology-driven environmental management.
+      </div>
+
+    </div>
+
+    <div class="exp-card">
+
+      <div class="exp-role">
+        Shakespeare and Marlowe:
+        We Both Are Best Friends of Different Nature
+      </div>
+
+      <div class="exp-company">
+        LitCelebrate’24 • Motilal Nehru College
+      </div>
+
+      <div class="exp-date">
+        2024
+      </div>
+
+      <div class="exp-desc">
+        Comparative literary presentation examining
+        thematic contrasts and creative parallels
+        between Shakespeare and Christopher Marlowe.
+      </div>
+
+    </div>
+
+    <div class="exp-card">
+
+      <div class="exp-role">
+        Gender-Based Study on Emotions:
+        Designing an App for Calculating Emotional Intelligence
+      </div>
+
+      <div class="exp-company">
+        Conference on Gender Perspectives in Public Policy and Development
+      </div>
+
+      <div class="exp-date">
+        2024
+      </div>
+
+      <div class="exp-desc">
+        Research presentation integrating emotional intelligence,
+        gender studies, and digital innovation
+        with creative recommendation systems.
+      </div>
+
+    </div>
+
+    <div class="exp-card">
+
+      <div class="exp-role">
+        Navigating the Digital Divide:
+        The Dual Impact of Technology on Business Management
+      </div>
+
+      <div class="exp-company">
+        International Conference on Social Development & Governance
+      </div>
+
+      <div class="exp-date">
+        2023
+      </div>
+
+      <div class="exp-desc">
+        Conference paper discussing technological inequality,
+        governance structures,
+        and digital transformation in business systems.
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- =========================
+LITERATURE
+========================= -->
+
+<section id="literature">
+
+<h2 class="section-title">
+Newspaper & Poetry Writings
+</h2>
+
+<div class="experience-grid">
+
+<div class="exp-card glass-card">
+
+<div class="exp-role">
+The Unfortunate Floods That Occurred Last Monsoon
+</div>
+
+<div class="exp-company">
+Creative Saplings • 2024
+</div>
+
+<div class="exp-desc">
+
+Poetry reflecting environmental destruction,
+loss,
+and emotional displacement.
+
+</div>
+
+</div>
+
+<div class="exp-card glass-card">
+
+<div class="exp-role">
+Greek Gods in The Odyssey
+</div>
+
+<div class="exp-company">
+Creative Saplings • 2024
+</div>
+
+<div class="exp-desc">
+
+Literary exploration of mythology,
+divinity,
+and symbolic power structures.
+
+</div>
+
+</div>
+
+<div class="exp-card glass-card">
+
+<div class="exp-role">
+Seeking Justice with Fairness:
+A Case of Suicide in Azamgarh School
+</div>
+
+<div class="exp-company">
+Samaj Weekly • 2023
+</div>
+
+<div class="exp-desc">
+
+Newspaper article focused on justice,
+institutional accountability,
+and social ethics.
+
+</div>
+
+</div>
+
+<div class="exp-card glass-card">
+
+<div class="exp-role">
+Everyday is a New Beginning
+</div>
+
+<div class="exp-company">
+Times of India • 2022
+</div>
+
+<div class="exp-desc">
+
+Reflective writing centered on resilience,
+growth,
+and optimism.
+
+</div>
+
+</div>
+
+<div class="exp-card glass-card">
+
+<div class="exp-role">
+Happiness is in Me
+</div>
+
+<div class="exp-company">
+Hindustan Times • 2022
+</div>
+
+<div class="exp-desc">
+
+Personal reflective writing exploring emotional consciousness and inner peace.
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+BOOKS
+========================= -->
+
+<section id="books">
+
+<h2 class="section-title">
+Published Book
+</h2>
+
+<div class="pub-grid">
+
+<div class="pub-card glass-card">
+
+<div class="pub-meta">
+Bluerose Publishers • 2023
+</div>
+
+<h4>
+Emotions, Expressions and Experiences
+</h4>
+
+<p>
+
+ISBN: 9789357416047
+
+<br><br>
+
+A literary anthology navigating poetry,
+reflection,
+emotion,
+and introspective storytelling.
+
+</p>
+
+<a
+href="https://www.blueroseone.com/"
+target="_blank"
+class="pub-link"
+>
+
+Publisher Website
+<i class="fas fa-arrow-right"></i>
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+PRESENTATIONS
+========================= -->
+
+<section id="presentations">
+
+<h2 class="section-title">
+Conference Presentations
+</h2>
+
+<div class="experience-grid">
+
+<div class="exp-card glass-card">
+
+<div class="exp-role">
+Designing an E-Tech App:
+Promoting E-Waste Management Techniques
+</div>
+
+<div class="exp-company">
+Orrey’24 • Miranda House
+</div>
+
+<div class="exp-date">
+2024
+</div>
+
+<div class="exp-desc">
+
+Presentation focused on sustainability,
+e-waste awareness,
+and digital environmental practices.
+
+</div>
+
+</div>
+
+<div class="exp-card glass-card">
+
+<div class="exp-role">
+Shakespeare and Marlowe:
+We Both Are Best Friends of Different Nature
+</div>
+
+<div class="exp-company">
+LitCelebrate’24 • Motilal Nehru College
+</div>
+
+<div class="exp-date">
+2024
+</div>
+
+<div class="exp-desc">
+
+Comparative literary presentation
+exploring Shakespeare and Christopher Marlowe.
+
+</div>
+
+</div>
+
+<div class="exp-card glass-card">
+
+<div class="exp-role">
+Gender-Based Study on Emotions:
+Designing an App for Emotional Intelligence
+</div>
+
+<div class="exp-company">
+Conference on Gender Perspectives in Public Policy
+</div>
+
+<div class="exp-date">
+2024
+</div>
+
+<div class="exp-desc">
+
+Interdisciplinary research integrating emotional intelligence,
+gender studies,
+and technology.
+
+</div>
+
+</div>
+
+<div class="exp-card glass-card">
+
+<div class="exp-role">
+Navigating the Digital Divide
+</div>
+
+<div class="exp-company">
+International Conference on Social Development & Governance
+</div>
+
+<div class="exp-date">
+2023
+</div>
+
+<div class="exp-desc">
+
+Research paper presentation on technology,
+digital accessibility,
+and governance systems.
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+EXPERIENCE
+========================= -->
+
+<section id="experience">
+
+<h2 class="section-title">
+Professional Journey
+</h2>
+
+<div class="experience-grid">
+
+<div class="exp-card glass-card">
+
+<div class="exp-role">
+Editorial Intern
+</div>
+
+<div class="exp-company">
+The World Times
+</div>
+
+<div class="exp-date">
+March 2026 – Present
+</div>
+
+<div class="exp-desc">
+
+Working on editorial planning,
+proofreading,
+digital publishing,
+and content editing.
+
+</div>
+
+</div>
+
+<div class="exp-card glass-card">
+
+<div class="exp-role">
+Journalist Intern
+</div>
+
+<div class="exp-company">
+ONE AIR MEDIA
+</div>
+
+<div class="exp-date">
+August 2025 – Present
+</div>
+
+<div class="exp-desc">
+
+Covering digital stories,
+online reporting,
+and media production workflows.
+
+</div>
+
+</div>
+
+<div class="exp-card glass-card">
+
+<div class="exp-role">
+Research Assistant
+</div>
+
+<div class="exp-company">
+qtanalytics
+</div>
+
+<div class="exp-date">
+2024 – 2025
+</div>
+
+<div class="exp-desc">
+
+Worked on interdisciplinary research,
+LaTeX documentation,
+and analytical writing.
+
+</div>
+
+</div>
+
+<div class="exp-card glass-card">
+
+<div class="exp-role">
+Editor
+</div>
+
+<div class="exp-company">
+Celluloid — Film Club of Miranda House
+</div>
+
+<div class="exp-date">
+2024 – 2025
+</div>
+
+<div class="exp-desc">
+
+Edited film articles,
+curated editorial pieces,
+and managed communication content.
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+SKILLS
+========================= -->
+
+<section id="skills">
+
+<h2 class="section-title">
+Core Competencies
+</h2>
+
+<div class="skills-grid">
+
+<div class="skill-card glass-card">
+<i class="fas fa-pen-nib"></i>
+<h3>Journalism</h3>
+<p>Investigative writing, reporting & storytelling</p>
+</div>
+
+<div class="skill-card glass-card">
+<i class="fas fa-book-open"></i>
+<h3>Editorial</h3>
+<p>Editing, proofreading & publishing strategy</p>
+</div>
+
+<div class="skill-card glass-card">
+<i class="fas fa-feather"></i>
+<h3>Creative Writing</h3>
+<p>Poetry, essays & literary storytelling</p>
+</div>
+
+<div class="skill-card glass-card">
+<i class="fas fa-magnifying-glass"></i>
+<h3>Research</h3>
+<p>Academic research & qualitative analysis</p>
+</div>
+
+<div class="skill-card glass-card">
+<i class="fas fa-film"></i>
+<h3>Cinema Studies</h3>
+<p>Film criticism & narrative analysis</p>
+</div>
+
+<div class="skill-card glass-card">
+<i class="fas fa-file-code"></i>
+<h3>Technical</h3>
+<p>LaTeX, Canva & documentation systems</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+CONTACT
+========================= -->
+
+<section id="contact" class="contact">
+
+<h2 class="section-title">
+Let’s Collaborate
+</h2>
+
+<div class="contact-wrapper">
+
+<div class="contact-side">
+
+<h3>
+Open for Editorial, Literary & Research Collaborations
+</h3>
+
+<p>
+
+Whether you’re building a publication,
+developing research,
+creating literary projects,
+or producing media narratives —
+I’m always open to meaningful collaborations.
+
+</p>
+
+<div class="contact-points">
+
+<div class="contact-point">
+
+<i class="fas fa-envelope"></i>
+
+<div>
+
+<h4>Email</h4>
+
+<span>
+your-email@example.com
+</span>
+
+</div>
+
+</div>
+
+<div class="contact-point">
+
+<i class="fas fa-book"></i>
+
+<div>
+
+<h4>Research & Literature</h4>
+
+<span>
+Academic papers, journals & literary collaborations
+</span>
+
+</div>
+
+</div>
+
+<div class="contact-point">
+
+<i class="fas fa-newspaper"></i>
+
+<div>
+
+<h4>Editorial & Journalism</h4>
+
+<span>
+Articles, features, interviews & media writing
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="social-icons">
+
+<a
+href="https://www.linkedin.com/in/isha-mittal-51a06927b/"
+target="_blank"
+>
+<i class="fab fa-linkedin"></i>
+</a>
+
+<a href="#">
+<i class="fab fa-instagram"></i>
+</a>
+
+<a href="#">
+<i class="fab fa-x-twitter"></i>
+</a>
+
+</div>
+
+</div>
+
+<!-- FORM -->
+
+<div class="contact-form glass-card">
+
+<div class="form-title">
+Send a Message
+</div>
+
+<div class="form-subtitle">
+
+Let’s discuss your ideas,
+projects,
+research,
+or editorial collaborations.
+
+</div>
+
+<form>
+
+<div class="form-group">
+
+<label>
+Full Name
+</label>
+
+<input
+type="text"
+class="form-control"
+placeholder="Enter your name"
+/>
+
+</div>
+
+<div class="form-group">
+
+<label>
+Email Address
+</label>
+
+<input
+type="email"
+class="form-control"
+placeholder="Enter your email"
+/>
+
+</div>
+
+<div class="form-group">
+
+<label>
+Project Type
+</label>
+
+<select class="form-control">
+
+<option>
+Select category
+</option>
+
+<option>
+Editorial Collaboration
+</option>
+
+<option>
+Research Partnership
+</option>
+
+<option>
+Creative Writing
+</option>
+
+<option>
+Media Feature
+</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>
+Message
+</label>
+
+<textarea
+class="form-control"
+placeholder="Tell me about your project..."
+></textarea>
+
+</div>
+
+<button type="submit" class="submit-btn">
+Send Message
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+FOOTER
+========================= -->
+
+<footer>
+
+© 2026 Isha Mittal • Crafted with elegance and intellectual precision.
+
+</footer>
+
+</body>
+</html>
